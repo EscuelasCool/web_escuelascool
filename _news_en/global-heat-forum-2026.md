@@ -11,6 +11,16 @@ EscuelasCool will take part in several presentations and activities, sharing the
 
 We are very much looking forward to learning from what is happening in other regions of the world and bringing those experiences back to Latin America.
 
+## Watch our presentation
+
+At the Forum we presented EscuelasCool in a two-minute flash talk, *Hot classrooms, cool policies: making extreme heat visible in Latin American schools*. You can watch the recording here:
+
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/F6b3524E5Bg" title="Yasna Palmeiro-Silva's presentation at the Global Heat Forum 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-credit">Independent recording by Dr Fábio Luiz Vieira. <a href="https://www.youtube.com/watch?v=F6b3524E5Bg">Watch on YouTube</a></p>
+
 **More information**
 
 - Official Forum website: [Global Heat Forum 2026](https://heathealth.info/globalheatforum/)

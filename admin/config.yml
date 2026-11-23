@@ -231,6 +231,42 @@ collections:
               - { label: "Instagram (URL)", name: instagram, widget: string, required: false }
               - { label: "Sitio institucional (URL)", name: institution_url, widget: string, required: false }
 
+  # ---------- En los medios (una sola lista, tres idiomas) ----------
+  - name: medios
+    label: "En los medios"
+    files:
+      - name: media
+        label: "Apariciones en medios"
+        file: "_data/media.yml"
+        fields:
+          - label: "Apariciones"
+            name: items
+            widget: list
+            summary: "{{fields.outlet}} — {{fields.title}}"
+            fields:
+              - { label: "Medio", name: outlet, widget: string, hint: "Ej.: EL PAÍS Chile" }
+              - { label: "Fecha", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD-MM-YYYY", time_format: false }
+              - { label: "Título original", name: title, widget: string }
+              - { label: "Autoría", name: author, widget: string, required: false }
+              - { label: "Enlace", name: url, widget: string }
+              - { label: "Idioma original", name: lang, widget: select, options: ["es", "en", "pt"], default: "es" }
+              - label: "Tipo (tribuna, entrevista, reportaje…)"
+                name: kind
+                widget: object
+                required: false
+                fields:
+                  - { label: "Español", name: es, widget: string, required: false }
+                  - { label: "English", name: en, widget: string, required: false }
+                  - { label: "Português", name: pt, widget: string, required: false }
+              - label: "Resumen breve"
+                name: summary
+                widget: object
+                required: false
+                fields:
+                  - { label: "Español", name: es, widget: text, required: false }
+                  - { label: "English", name: en, widget: text, required: false }
+                  - { label: "Português", name: pt, widget: text, required: false }
+
   # ---------- Publicaciones (una sola lista, común a los 3 idiomas) ----------
   - name: publicaciones
     label: "Publicaciones"

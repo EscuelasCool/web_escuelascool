@@ -1,0 +1,40 @@
+# ============================================================
+#  EscuelasCool en los medios (columnas, entrevistas, reportajes).
+#  Aparece en Publicaciones, sección "En los medios".
+#  Editable desde el CMS: "En los medios".
+#   - title: título original de la pieza (no se traduce)
+#   - lang: idioma original (es / en / pt); si difiere del idioma
+#           de la página, se indica "En español", etc.
+#   - kind y summary: un texto por idioma
+# ============================================================
+
+items:
+  - outlet: "Dialogue Earth (LinkedIn)"
+    date: 2026-11-23
+    title: "Heat is shaping children's futures"
+    author: "Yasna Palmeiro-Silva & Tolullah Oni (UrbanBetter)"
+    url: "https://www.linkedin.com/posts/dialogueearth_heat-is-shaping-childrens-futures-activity-7530576404464386048-NuRP"
+    lang: "en"
+    kind:
+      es: "Entrevista en video"
+      en: "Video interview"
+      pt: "Entrevista em vídeo"
+    summary:
+      es: "En el Global Heat Forum 2026, en Bangkok, Dialogue Earth conversó con Yasna Palmeiro-Silva y Tolullah Oni sobre por qué el calor extremo no afecta a todos por igual, lo poco que aún se sabe de sus efectos a largo plazo en niñas, niños y adolescentes, y el papel de las y los jóvenes en las soluciones."
+      en: "At the Global Heat Forum 2026 in Bangkok, Dialogue Earth spoke with Yasna Palmeiro-Silva and Tolullah Oni about why extreme heat does not affect everyone equally, how little is still known about its long-term effects on children and young people, and the role of young people in the solutions."
+      pt: "No Global Heat Forum 2026, em Bangkok, a Dialogue Earth conversou com Yasna Palmeiro-Silva e Tolullah Oni sobre por que o calor extremo não afeta todos da mesma forma, o pouco que ainda se sabe sobre seus efeitos de longo prazo em crianças e adolescentes e o papel dos jovens nas soluções."
+
+  - outlet: "EL PAÍS Chile"
+    date: 2026-11-18
+    title: "El cambio climático también profundiza la desigualdad educativa"
+    author: "Martín Andrade Ruiz-Tagle (Corporación Ciudades)"
+    url: "https://elpais.com/chile/2026-11-18/el-cambio-climatico-tambien-profundiza-la-desigualdad-educativa.html"
+    lang: "es"
+    kind:
+      es: "Tribuna"
+      en: "Op-ed"
+      pt: "Artigo de opinião"
+    summary:
+      es: "Columna sobre cómo el calor extremo y otros impactos climáticos profundizan las brechas educativas en América Latina, y por qué adaptar las escuelas al clima que viene. Presenta EscuelasCool como la iniciativa que genera evidencia para orientar mejores decisiones educativas y urbanas."
+      en: "An op-ed on how extreme heat and other climate impacts are widening educational gaps in Latin America, and why schools must be adapted to the climate ahead. It presents EscuelasCool as the initiative generating evidence to inform better education and urban policy decisions."
+      pt: "Artigo sobre como o calor extremo e outros impactos climáticos aprofundam as desigualdades educacionais na América Latina, e por que é preciso adaptar as escolas ao clima que vem. Apresenta o EscuelasCool como a iniciativa que gera evidências para orientar melhores decisões educacionais e urbanas."

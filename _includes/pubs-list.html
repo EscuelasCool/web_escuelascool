@@ -2,6 +2,7 @@
 {% assign ncoll = "notes_" | append: include.lang %}
 {% assign notes = site[ncoll] | sort: "date" | reverse %}
 {% assign pubs = site.publications | sort: "year" | reverse %}
+{% assign media = site.data.media.items | sort: "date" | reverse %}
 
 {% if notes.size > 0 %}
 <section class="pubs-block" aria-labelledby="notes-title">
@@ -22,6 +23,23 @@
 </section>
 {% endif %}
 
+{% if media.size > 0 %}
+<section class="pubs-block" aria-labelledby="media-title">
+  <h2 id="media-title">{{ t.media_title }}</h2>
+  <ul class="pub-list">
+    {% for item in media %}
+    {% assign lang_key = "in_" | append: item.lang %}
+    <li class="pub">
+      {% if item.kind[include.lang] %}<span class="tag">{{ item.kind[include.lang] }}</span>{% endif %}
+      <p class="pub-title"><a href="{{ item.url }}"{% if item.lang != include.lang %} hreflang="{{ item.lang }}"{% endif %}>{{ item.title }}</a></p>
+      <p class="pub-meta">{% if item.author %}{{ item.author }}. {% endif %}<em>{{ item.outlet }}</em>, {% include date.html date=item.date lang=include.lang %}{% if item.lang != include.lang %} · {{ t[lang_key] }}{% endif %}</p>
+      {% if item.summary[include.lang] %}<p class="media-summary">{{ item.summary[include.lang] }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if pubs.size > 0 %}
 <section class="pubs-block" aria-labelledby="articles-title">
   <h2 id="articles-title">{{ t.articles_title }}</h2>
@@ -35,7 +53,7 @@
     {% endfor %}
   </ul>
 </section>
-{% elsif notes.size > 0 %}
+{% elsif notes.size > 0 or media.size > 0 %}
 <p class="note">{{ t.articles_soon }}</p>
 {% else %}
 <div class="empty-state">

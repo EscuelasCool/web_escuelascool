@@ -11,6 +11,16 @@ O EscuelasCool participará de diferentes apresentações e atividades, nas quai
 
 Vamos com muita vontade de aprender com o que está acontecendo em outras regiões do mundo e de trazer essas experiências de volta para a América Latina.
 
+## Assista à nossa apresentação
+
+No fórum, apresentamos o EscuelasCool em uma fala breve de dois minutos, *Hot classrooms, cool policies: making extreme heat visible in Latin American schools*, sobre como tornar visível o calor extremo nas escolas da América Latina. Assista à gravação aqui:
+
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/F6b3524E5Bg" title="Apresentação de Yasna Palmeiro-Silva no Global Heat Forum 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-credit">Gravação independente do Dr. Fábio Luiz Vieira. <a href="https://www.youtube.com/watch?v=F6b3524E5Bg">Assistir no YouTube</a></p>
+
 **Mais informações**
 
 - Site oficial do fórum: [Global Heat Forum 2026](https://heathealth.info/globalheatforum/)
