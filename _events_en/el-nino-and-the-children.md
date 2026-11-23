@@ -9,6 +9,13 @@ format: "Online (Zoom) · in Spanish"
 image: "/assets/img/eventos/el-nino-y-los-ninos.jpg"
 image_alt: "Poster for the webinar El Niño y los niños: students talking in a school corridor, with a large yellow sun in the background"
 registration_url: "https://upch.zoom.us/webinar/register/WN_iB773WtfTMCDuhjL2p2KEA#/registration"
+video_url: "https://www.youtube.com/watch?v=R-o0Xl_lPuM"
+# Cápsulas: video (archivo en /assets/videos/... o enlace de YouTube), título y, opcional, quién habla y miniatura (poster)
+capsules:
+  - title: "How do we prepare? The IDB perspective"
+    who: "Maria Soledad Bos, Inter-American Development Bank"
+    video: "/assets/videos/el-nino-y-los-ninos-capsula-1.mp4"
+    poster: "/assets/img/eventos/el-nino-y-los-ninos-capsula-1.jpg"
 objective: "To analyse the implications of El Niño 2026–27 for the health, wellbeing and learning of children and school communities in Latin America, and to identify concrete short-term preparedness actions and guidance for strengthening the resilience of the school system in the long term."
 specific_objectives:
   - "Provide a clear, regionally differentiated assessment of the ongoing event."

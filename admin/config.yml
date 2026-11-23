@@ -134,6 +134,13 @@ collections:
           - { label: "Código Wellcome", name: grant, widget: string }
           - { label: "Institución anfitriona", name: host, widget: string }
           - { label: "Mostrar página de Equipo", name: show_team, widget: boolean, default: false, hint: "Desactivado = la página Equipo muestra 'Página en construcción'. Actívalo cuando estén todas las fichas." }
+          - label: "Redes sociales (íconos del pie de página)"
+            name: social
+            widget: object
+            fields:
+              - { label: "Instagram (URL)", name: instagram, widget: string, required: false }
+              - { label: "LinkedIn (URL)", name: linkedin, widget: string, required: false }
+              - { label: "YouTube (URL)", name: youtube, widget: string, required: false }
           - label: "Instituciones socias"
             name: partners
             widget: list
@@ -379,6 +386,18 @@ collections:
       - { label: "Afiche o imagen", name: image, widget: image, required: false }
       - { label: "Descripción de la imagen (accesibilidad)", name: image_alt, widget: string, required: false }
       - { label: "Enlace de inscripción", name: registration_url, widget: string, required: false }
+      - { label: "Grabación (enlace de YouTube)", name: video_url, widget: string, required: false, hint: "Pega el enlace del video, p. ej. https://www.youtube.com/watch?v=… Aparece arriba del objetivo y en la lista de eventos." }
+      - { label: "Grabación: empezar en el segundo (opcional)", name: video_start, widget: number, required: false }
+      - label: "Cápsulas (videos cortos)"
+        name: capsules
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Título", name: title, widget: string }
+          - { label: "Quién habla (opcional)", name: who, widget: string, required: false }
+          - { label: "Video (archivo .mp4 o enlace de YouTube/Shorts)", name: video, widget: file, required: false, media_folder: "/assets/videos", public_folder: "/assets/videos" }
+          - { label: "Miniatura (opcional)", name: poster, widget: image, required: false }
       - { label: "Objetivo", name: objective, widget: text, required: false }
       - { label: "Objetivos específicos", name: specific_objectives, widget: list, required: false }
       - { label: "Alcance", name: scope, widget: text, required: false }
@@ -410,6 +429,18 @@ collections:
       - { label: "Afiche o imagen", name: image, widget: image, required: false }
       - { label: "Descripción de la imagen (accesibilidad)", name: image_alt, widget: string, required: false }
       - { label: "Enlace de inscripción", name: registration_url, widget: string, required: false }
+      - { label: "Grabación (enlace de YouTube)", name: video_url, widget: string, required: false, hint: "Pega el enlace del video, p. ej. https://www.youtube.com/watch?v=… Aparece arriba del objetivo y en la lista de eventos." }
+      - { label: "Grabación: empezar en el segundo (opcional)", name: video_start, widget: number, required: false }
+      - label: "Cápsulas (videos cortos)"
+        name: capsules
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Título", name: title, widget: string }
+          - { label: "Quién habla (opcional)", name: who, widget: string, required: false }
+          - { label: "Video (archivo .mp4 o enlace de YouTube/Shorts)", name: video, widget: file, required: false, media_folder: "/assets/videos", public_folder: "/assets/videos" }
+          - { label: "Miniatura (opcional)", name: poster, widget: image, required: false }
       - { label: "Objetivo", name: objective, widget: text, required: false }
       - { label: "Objetivos específicos", name: specific_objectives, widget: list, required: false }
       - { label: "Alcance", name: scope, widget: text, required: false }
@@ -441,6 +472,18 @@ collections:
       - { label: "Afiche o imagen", name: image, widget: image, required: false }
       - { label: "Descripción de la imagen (accesibilidad)", name: image_alt, widget: string, required: false }
       - { label: "Enlace de inscripción", name: registration_url, widget: string, required: false }
+      - { label: "Grabación (enlace de YouTube)", name: video_url, widget: string, required: false, hint: "Pega el enlace del video, p. ej. https://www.youtube.com/watch?v=… Aparece arriba del objetivo y en la lista de eventos." }
+      - { label: "Grabación: empezar en el segundo (opcional)", name: video_start, widget: number, required: false }
+      - label: "Cápsulas (videos cortos)"
+        name: capsules
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Título", name: title, widget: string }
+          - { label: "Quién habla (opcional)", name: who, widget: string, required: false }
+          - { label: "Video (archivo .mp4 o enlace de YouTube/Shorts)", name: video, widget: file, required: false, media_folder: "/assets/videos", public_folder: "/assets/videos" }
+          - { label: "Miniatura (opcional)", name: poster, widget: image, required: false }
       - { label: "Objetivo", name: objective, widget: text, required: false }
       - { label: "Objetivos específicos", name: specific_objectives, widget: list, required: false }
       - { label: "Alcance", name: scope, widget: text, required: false }

@@ -9,6 +9,13 @@ format: "Online (Zoom)"
 image: "/assets/img/eventos/el-nino-y-los-ninos.jpg"
 image_alt: "Afiche del conversatorio El Niño y los niños: estudiantes conversando en el corredor de una escuela, con un gran sol amarillo de fondo"
 registration_url: "https://upch.zoom.us/webinar/register/WN_iB773WtfTMCDuhjL2p2KEA#/registration"
+video_url: "https://www.youtube.com/watch?v=R-o0Xl_lPuM"
+# Cápsulas: video (archivo en /assets/videos/... o enlace de YouTube), título y, opcional, quién habla y miniatura (poster)
+capsules:
+  - title: "¿Cómo nos preparamos? La mirada del BID"
+    who: "Maria Soledad Bos, Banco Interamericano de Desarrollo"
+    video: "/assets/videos/el-nino-y-los-ninos-capsula-1.mp4"
+    poster: "/assets/img/eventos/el-nino-y-los-ninos-capsula-1.jpg"
 objective: "Analizar las implicancias de El Niño 2026-27 para la salud, el bienestar y el aprendizaje de niños, niñas y comunidades escolares en América Latina, e identificar acciones concretas de preparación en el corto plazo y orientaciones para fortalecer la resiliencia del sistema escolar en el largo plazo."
 specific_objectives:
   - "Entregar un diagnóstico claro y regionalmente diferenciado del evento en curso."

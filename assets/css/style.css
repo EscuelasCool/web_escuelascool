@@ -508,6 +508,24 @@ dialog.profile h3 { font-size: 1rem; margin: 1.6rem 0 .6rem; }
 .event-card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; margin-top: .9rem; }
 @media (max-width: 620px) { .event-card { grid-template-columns: 1fr; } .event-card-img { max-width: 220px; } }
 
+/* Grabación y cápsulas de eventos */
+.event-body .event-recording .video-credit { margin-top: .6rem; font-size: .98rem; }
+.btn-watch { background: var(--navy); }
+.btn-watch:hover { background: var(--blue); }
+.capsules {
+  list-style: none; margin: 1.25rem 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem;
+}
+.capsule video, .capsule-frame {
+  display: block; width: 100%; aspect-ratio: 9 / 16; border-radius: var(--radius);
+  background: var(--navy); box-shadow: 0 10px 26px rgba(2, 49, 85, .14); object-fit: cover;
+}
+.capsule-frame { position: relative; overflow: hidden; }
+.capsule-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.event-body .capsule-title { margin: .7rem 0 0; font-family: var(--font-head); font-weight: 800; color: var(--navy); line-height: 1.35; font-size: 1rem; }
+.event-body .capsule-who { margin: .15rem 0 0; color: var(--slate); font-size: .92rem; line-height: 1.4; }
+.capsule-dl { display: inline-block; margin-top: .35rem; font-size: .92rem; }
+
 /* ------------------------------------------------------------
    Pie de página
    ------------------------------------------------------------ */
@@ -516,6 +534,14 @@ dialog.profile h3 { font-size: 1rem; margin: 1.6rem 0 .6rem; }
 .footer-brand p { margin: .5rem 0 0; color: var(--slate); font-size: .95rem; max-width: 36ch; }
 .footer-meta p { margin: .15rem 0; color: var(--slate); font-size: .92rem; }
 .footer-wellcome img { display: block; height: 72px; width: auto; }
+.footer-social { display: flex; align-items: center; gap: .8rem; margin-top: 1rem; }
+.footer-social-label { font-family: var(--font-head); font-weight: 800; font-size: .92rem; color: var(--navy); }
+.footer-social ul { list-style: none; margin: 0; padding: 0; display: flex; gap: .5rem; }
+.footer-social a {
+  display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+  border-radius: 50%; background: var(--navy); color: #fff; transition: background .15s, transform .15s;
+}
+.footer-social a:hover, .footer-social a:focus-visible { background: var(--orange-ink); transform: translateY(-1px); }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 1.25rem; } }
 
 .muted { color: var(--slate); }

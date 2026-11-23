@@ -110,6 +110,15 @@ es:
   ev_min: "Min."
   ev_content: "Contenido"
   ev_who: "Presenta"
+  ev_recording: "Grabación"
+  watch_recording: "Ver la grabación"
+  watch_youtube: "Ver en YouTube"
+  ev_capsules: "Cápsulas"
+  capsules_intro: "Fragmentos breves del conversatorio para compartir en redes sociales y WhatsApp."
+  download: "Descargar"
+  # Redes sociales (pie de página)
+  follow_us: "Síguenos"
+  social_label: "EscuelasCool en redes sociales"
 
 en:
   label: "English"
@@ -210,6 +219,14 @@ en:
   ev_min: "Min."
   ev_content: "Session"
   ev_who: "Speaker(s)"
+  ev_recording: "Recording"
+  watch_recording: "Watch the recording"
+  watch_youtube: "Watch on YouTube"
+  ev_capsules: "Clips"
+  capsules_intro: "Short clips from the webinar to share on social media and WhatsApp (in Spanish)."
+  download: "Download"
+  follow_us: "Follow us"
+  social_label: "EscuelasCool on social media"
 
 pt:
   label: "Português"
@@ -310,3 +327,11 @@ pt:
   ev_min: "Min."
   ev_content: "Conteúdo"
   ev_who: "Apresenta"
+  ev_recording: "Gravação"
+  watch_recording: "Assistir à gravação"
+  watch_youtube: "Assistir no YouTube"
+  ev_capsules: "Cápsulas"
+  capsules_intro: "Trechos curtos do webinar para compartilhar nas redes sociais e no WhatsApp (em espanhol)."
+  download: "Baixar"
+  follow_us: "Siga-nos"
+  social_label: "EscuelasCool nas redes sociais"

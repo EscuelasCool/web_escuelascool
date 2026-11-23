@@ -8,6 +8,13 @@ email: "ypalmeiro@uc.cl"
 grant: "331072/Z/25/Z"
 host: "Universidad Peruana Cayetano Heredia"
 
+# Redes sociales (íconos en el pie de página de todas las páginas).
+# Si un campo queda vacío, ese ícono no se muestra.
+social:
+  instagram: ""   # cuando exista: "https://www.instagram.com/escuelascool/"
+  linkedin: "https://www.linkedin.com/company/escuelascool"
+  youtube: "https://www.youtube.com/@EscuelasCool"
+
 # Página de Equipo: false = muestra "Página en construcción".
 # Cambia a true cuando estén listas las fichas de todo el equipo.
 show_team: true

@@ -34,6 +34,44 @@ layout: base
   </div>
 
   <div class="event-body">
+    {% if page.video_url %}
+    {% assign vid = page.video_url | split: "v=" | last | split: "&" | first | split: "youtu.be/" | last | split: "shorts/" | last | split: "?" | first %}
+    <section id="grabacion" class="event-recording">
+      <h2>{{ t.ev_recording }}</h2>
+      <div class="video-embed">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ vid }}{% if page.video_start %}?start={{ page.video_start }}{% endif %}" title="{{ t.ev_recording }}: {{ page.title }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="video-credit"><a href="https://www.youtube.com/watch?v={{ vid }}" rel="noopener">{{ t.watch_youtube }}</a></p>
+    </section>
+    {% endif %}
+
+    {% if page.capsules and page.capsules.size > 0 %}
+    <section id="capsulas" class="event-capsules">
+      <h2>{{ t.ev_capsules }}</h2>
+      <p>{{ t.capsules_intro }}</p>
+      <ul class="capsules">
+        {% for c in page.capsules %}
+        {% assign ext = c.video | split: "." | last | downcase %}
+        <li class="capsule">
+          {% if ext == "mp4" or ext == "webm" or ext == "mov" %}
+          <video controls playsinline preload="none"{% if c.poster %} poster="{{ c.poster | relative_url }}"{% endif %}>
+            <source src="{{ c.video | relative_url }}" type="video/{% if ext == 'mov' %}mp4{% else %}{{ ext }}{% endif %}">
+          </video>
+          {% else %}
+          {% assign cid = c.video | split: "v=" | last | split: "&" | first | split: "youtu.be/" | last | split: "shorts/" | last | split: "?" | first %}
+          <div class="capsule-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ cid }}" title="{{ c.title }}" loading="lazy" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          {% endif %}
+          <p class="capsule-title">{{ c.title }}</p>
+          {% if c.who %}<p class="capsule-who">{{ c.who }}</p>{% endif %}
+          {% if ext == "mp4" or ext == "webm" or ext == "mov" %}<a class="text-link capsule-dl" href="{{ c.video | relative_url }}" download>{{ t.download }}<span class="sr-only">: {{ c.title }}</span></a>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
     {% if page.objective %}
     <section>
       <h2>{{ t.ev_objective }}</h2>
