@@ -24,6 +24,21 @@ items:
       en: "At the Global Heat Forum 2026 in Bangkok, Dialogue Earth spoke with Yasna Palmeiro-Silva and Tolullah Oni about why extreme heat does not affect everyone equally, how little is still known about its long-term effects on children and young people, and the role of young people in the solutions."
       pt: "No Global Heat Forum 2026, em Bangkok, a Dialogue Earth conversou com Yasna Palmeiro-Silva e Tolullah Oni sobre por que o calor extremo não afeta todos da mesma forma, o pouco que ainda se sabe sobre seus efeitos de longo prazo em crianças e adolescentes e o papel dos jovens nas soluções."
 
+  - outlet: "TV Valdivia"
+    date: 2026-10-26
+    title: "Entrevista a Tamara Hoffmann: investigación escuelas y cambio climático"
+    author: "Tamara Hoffmann Ferrada"
+    url: "https://www.youtube.com/watch?v=lYX8RnfPluI"
+    lang: "es"
+    kind:
+      es: "Entrevista en radio"
+      en: "Radio interview"
+      pt: "Entrevista na rádio"
+    summary:
+      es: "Tamara Hoffmann, a cargo del componente cualitativo de EscuelasCool, explica cómo El Niño 2026–27 y el cambio climático afectan la salud, el bienestar y el aprendizaje de niñas y niños, cómo se estudiará el calor en las salas de clases de Chile, Colombia y Perú, y por qué la meta son escuelas más resilientes."
+      en: "Tamara Hoffmann, who leads EscuelasCool's qualitative component, explains how El Niño 2026–27 and climate change affect children's health, wellbeing and learning, how heat in classrooms will be studied in Chile, Colombia and Peru, and why the goal is more resilient schools."
+      pt: "Tamara Hoffmann, responsável pelo componente qualitativo do EscuelasCool, explica como o El Niño 2026–27 e a mudança climática afetam a saúde, o bem-estar e a aprendizagem das crianças, como o calor nas salas de aula será estudado no Chile, na Colômbia e no Peru, e por que a meta são escolas mais resilientes."
+
   - outlet: "EL PAÍS Chile"
     date: 2026-11-18
     title: "El cambio climático también profundiza la desigualdad educativa"
